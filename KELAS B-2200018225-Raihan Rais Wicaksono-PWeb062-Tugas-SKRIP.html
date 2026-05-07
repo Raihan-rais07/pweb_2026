@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<title>Template Portofolio Informatika</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f4f7f6;
+}
+
+/* Gaya Header */
+.header {
+  background-color: #2c3e50; /* Biru Tua */
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Gaya Dasar Kolom */
+.column {
+  float: left;
+  padding: 20px;
+  height: 300px; 
+  color: white;
+}
+
+/* Kolom Samping (25%) */
+.column.side {
+  width: 25%;
+}
+
+/* Kolom Tengah (50%) */
+.column.middle {
+  width: 50%;
+}
+
+/* Kolom Setengah (50% untuk baris baru) */
+.column.half {
+    width: 50%;
+}
+
+/* Menghapus float setelah kolom */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Gaya Footer */
+.footer {
+  background-color: #34495e;
+  color: #bdc3c7;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Layout Responsif - Kolom menumpuk di layar kecil (< 600px) */
+@media (max-width: 600px) {
+  .column.side, .column.middle, .column.half {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Portofolio Digital Informatika</h1>
+  <p>Raihan Rais Wicaksono - Universitas Ahmad Dahlan</p>
+</div>
+
+<div class="row">
+  <div class="column side" style="background-color:#27ae60;">
+      <h3>Profil Singkat</h3>
+      <p>Mahasiswa akhir Informatika UAD dengan minat mendalam pada keamanan siber dan pengembangan web menggunakan PHP dan XAMPP.</p>
+  </div>
+  <div class="column middle" style="background-color:#2980b9;">
+      <h3>Pengalaman Proyek</h3>
+      <p>Berhasil menyelesaikan program KKN UAD dengan fokus pada literasi cybercrime dan pengembangan sistem survei organisasi selama magang di Lazismu DIY.</p>
+  </div>
+  <div class="column side" style="background-color:#f39c12;">
+      <h3>Keahlian Utama</h3>
+      <ul>
+          <li>Cyber Security</li>
+          <li>Digital Forensics</li>
+          <li>Web Development (PHP/XAMPP)</li>
+      </ul>
+  </div>
+</div>
+
+<div class="row">
+    <div class="column half" style="background-color:#e67e22;">
+        <h3>Detail KKN UAD</h3>
+        <p>Mengelola pelatihan komputer bagi anak desa dan mengedukasi masyarakat mengenai bahaya kejahatan siber di lingkungan lokal.</p>
+    </div>
+    <div class="column half" style="background-color:#8e44ad;">
+        <h3>Sistem Survei Magang</h3>
+        <p>Mengembangkan dashboard survei kesehatan organisasi berbasis web untuk Lazismu DIY guna meningkatkan efisiensi pendataan internal.</p>
+    </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2026 Raihan Rais Wicaksono | Teknik Informatika UAD</p>
+</div>
+
+</body>
+</html>
