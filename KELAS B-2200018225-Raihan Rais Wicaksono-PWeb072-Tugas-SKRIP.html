@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluasi Nilai Huruf</title>
+</head>
+<body>
+    <h2>Program Konversi Nilai Angka ke Huruf</h2>
+    
+    <script language="JavaScript">
+        // Meminta input nilai dari user melalui prompt
+        var inputAngka = prompt("Masukkan Nilai (0-100): ", 0);
+        
+        // Mengonversi input yang awalnya berupa teks (string) menjadi angka bilangan bulat
+        var nilai = parseInt(inputAngka);
+        var huruf = ""; // Variabel kosong untuk menampung hasil huruf nanti
+
+        // Memulai proses evaluasi menggunakan logika IF bertingkat
+        if (nilai >= 80 && nilai <= 100) {
+            huruf = "A";
+        } 
+        else if (nilai >= 65 && nilai <= 79) {
+            huruf = "B";
+        } 
+        else if (nilai >= 40 && nilai <= 64) {
+            huruf = "C";
+        } 
+        else if (nilai >= 21 && nilai <= 39) {
+            huruf = "D";
+        } 
+        else if (nilai >= 0 && nilai <= 20) {
+            huruf = "E";
+        } 
+        else {
+            huruf = "Nilai yang dimasukkan tidak valid (harus 0-100)";
+        }
+
+        // Mencetak hasil ke layar browser
+        document.write("Nilai Angka yang dimasukkan: <b>" + nilai + "</b><br>");
+        document.write("Hasil Konversi Huruf: <b>" + huruf + "</b>");
+
+    </script>
+</body>
+</html>
